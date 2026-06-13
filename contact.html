@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - AWAY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">AWAY</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="index.html#program">Program</a></li>
+                    <li><a href="index.html#news">News</a></li>
+                    <li><a href="https://note.com/away_college" target="_blank">Blog</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-black">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: 150px; padding-bottom: 100px;">
+        <div class="container" style="max-width: 800px;">
+            <h1 style="font-size: 48px; margin-bottom: 20px;">Contact</h1>
+            <p style="margin-bottom: 60px; color: #666;">プログラムに関するご質問、資料請求、研修のご相談など、お気軽にお問い合わせください。</p>
+
+            <form action="https://formspree.io/f/xreakywv" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label>お問い合わせ種別 <span class="required">必須</span></label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="お問い合わせ種別" value="個人（学生・社会人）" checked> <span>個人（学生・社会人）</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="お問い合わせ種別" value="法人・団体"> <span>法人・団体</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">お名前 <span class="required">必須</span></label>
+                    <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">メールアドレス <span class="required">必須</span></label>
+                    <input type="email" id="email" name="email" placeholder="example@away.jp" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="organization">学校名・貴社名</label>
+                    <input type="text" id="organization" name="organization" placeholder="〇〇大学 / 株式会社〇〇">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">件名 <span class="required">必須</span></label>
+                    <select id="subject" name="subject" required>
+                        <option value="">選択してください</option>
+                        <option value="program">プログラムについて</option>
+                        <option value="document">資料請求</option>
+                        <option value="interview">説明会予約</option>
+                        <option value="corporate">法人研修のご相談</option>
+                        <option value="other">その他</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+                    <textarea id="message" name="message" rows="8" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-black"
+                    style="width: 100%; padding: 20px; font-size: 18px; margin-top: 20px;">
+                    入力内容を確認する
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <a href="index.html">AWAY</a>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>プログラム</h4>
+                    <ul>
+                        <li><a href="student-program.html">学生向け</a></li>
+                        <li><a href="business-program.html">法人向け</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>サポート</h4>
+                    <ul>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                    <p class="copyright">© Copyright 2024 AWAY. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
