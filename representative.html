@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代表紹介 - AWAY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 代表紹介ページ専用スタイル */
+        .representative-hero {
+            padding-top: calc(var(--header-height) + 80px);
+            padding-bottom: 80px;
+            background-color: var(--gray-light);
+        }
+
+        .rep-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 60px;
+            align-items: start;
+            margin-top: 40px;
+        }
+
+        .rep-image-wrapper {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .rep-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            aspect-ratio: 3/4;
+        }
+
+        .rep-profile {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .rep-title-sub {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gray-medium);
+        }
+
+        .rep-name {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .rep-name-en {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--gray-medium);
+            margin-left: 15px;
+        }
+
+        .rep-message {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .rep-message p {
+            margin-bottom: 20px;
+        }
+
+        .rep-history {
+            margin-top: 80px;
+            padding: 80px 0;
+            border-top: 1px solid #eee;
+        }
+
+        .history-timeline {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 800px;
+        }
+
+        .history-item {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 30px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 20px;
+        }
+
+        .history-year {
+            font-weight: 700;
+            font-size: 18px;
+            font-family: var(--font-heading);
+        }
+
+        .history-detail {
+            font-size: 15px;
+            color: #555;
+        }
+
+        @media (max-width: 900px) {
+            .rep-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .rep-image-wrapper {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .history-item {
+                grid-template-columns: 100px 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">AWAY</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="index.html#program">Program</a></li>
+                    <li><a href="representative.html">REPRESENTATIVE</a></li>
+                    <li><a href="index.html#news">News</a></li>
+                    <li><a href="https://note.com/away_college" target="_blank">Blog</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-black">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="representative-hero">
+            <div class="container">
+                <span class="rep-title-sub">REPRESENTATIVE</span>
+                <h1 class="section-title" style="margin-bottom: 0; margin-top: 10px;">代表メッセージ</h1>
+                
+                <div class="rep-container">
+                    <div class="rep-image-wrapper">
+                        <!-- images/owner.png をサンプル画像として使用 -->
+                        <img src="images/owner.png" alt="代表 渡辺伸好" class="rep-image" onerror="this.src='https://picsum.photos/seed/owner/600/800'">
+                    </div>
+                    <div class="rep-profile">
+                        <div>
+                            <span class="rep-title-sub">代表取締役</span>
+                            <h2 class="rep-name">渡辺 伸好<span class="rep-name-en">Nobuyoshi Watanabe</span></h2>
+                        </div>
+                        <div class="rep-message">
+                            <p><strong>「The way（既成の道）」を脱ぎ捨て、「A WAY（自らの道）」を拓く。</strong></p>
+                            <p>
+                                私たちが生きる現代は、変化が激しく、これまでの「正解」が通用しない時代です。誰かが用意したレール（The way）を歩むことだけが、必ずしも正解ではないのかもしれません。
+                            </p>
+                            <p>
+                                私はこれまで、数多くの学生や社会人が海外での挑戦を通じて、大きく変化していく姿を目の当たりにしてきました。言葉も文化も異なる環境に身を置き、自分自身と向き合うことで、彼らは自分の価値観を再発見し、自ら考えて行動する力（A WAY）を手に入れていきます。
+                            </p>
+                            <p>
+                                AWAYは、単なる研修やインターンの場を提供する組織ではありません。一人ひとりが自身の「枠」を越え、内に秘めた火種を大きな炎へと育てるための伴走者です。
+                            </p>
+                            <p>
+                                誰もが自分の納得感を持って人生を切り拓いていける、そんな未来を信じて、私たちは挑戦をサポートし続けます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rep-history">
+            <div class="container">
+                <h2 class="section-title">経歴 / 沿革</h2>
+                <div class="history-timeline">
+                    <div class="history-item">
+                        <div class="history-year">2010年</div>
+                        <div class="history-detail">大学卒業後、国内大手企業にて新規事業の立ち上げおよびグローバル展開プロジェクトに従事。</div>
+                    </div>
+                    <div class="history-item">
+                        <div class="history-year">2015年</div>
+                        <div class="history-detail">東南アジアを中心に、海外インターンシップ事業や越境学習プログラムの開発に着手。</div>
+                    </div>
+                    <div class="history-item">
+                        <div class="history-year">2020年</div>
+                        <div class="history-detail">「自ら考え、自ら動く力」を育む教育プログラムの提供を目指し、株式会社AWAY（Planedot）を設立。代表取締役に就任。</div>
+                    </div>
+                    <div class="history-item">
+                        <div class="history-year">2024年</div>
+                        <div class="history-detail">累計数百名以上の学生・社会人の海外越境学習をサポート。イノベーション人材の育成に注力。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer theme-dark">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <a href="index.html">AWAY</a>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>プログラム</h4>
+                    <ul>
+                        <li><a href="student-program.html">学生向け</a></li>
+                        <li><a href="business-program.html">法人向け</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>サポート</h4>
+                    <ul>
+                        <li><a href="representative.html">代表紹介</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                    <p class="copyright">© Copyright 2024 AWAY. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
