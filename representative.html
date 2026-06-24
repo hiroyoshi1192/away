@@ -112,6 +112,66 @@
             color: #555;
         }
 
+        .rep-media {
+            padding: 80px 0;
+            background-color: #fff;
+            border-top: 1px solid #eee;
+        }
+
+        .media-list {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 800px;
+        }
+
+        .media-item {
+            background-color: var(--gray-light);
+            padding: 24px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .media-item:hover {
+            transform: translateY(-2px);
+            background-color: #f0f0f0;
+        }
+
+        .media-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .media-date-category {
+            font-size: 13px;
+            color: var(--gray-medium);
+            font-weight: 500;
+        }
+
+        .media-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #111;
+        }
+
+        .media-link-arrow {
+            font-size: 18px;
+            color: #000;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .media-item:hover .media-link-arrow {
+            transform: translateX(4px);
+        }
+
         @media (max-width: 900px) {
             .rep-container {
                 grid-template-columns: 1fr;
@@ -138,10 +198,9 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="index.html#about">ABOUT</a></li>
-                    <li><a href="index.html#program">Program</a></li>
+                    <li><a href="index.html#program">Service</a></li>
                     <li><a href="representative.html">REPRESENTATIVE</a></li>
-                    <li><a href="index.html#news">News</a></li>
-                    <li><a href="https://note.com/away_college" target="_blank">Blog</a></li>
+                                        <li><a href="https://note.com/away_college" target="_blank">Blog</a></li>
                 </ul>
                 <a href="contact.html" class="btn btn-black">Contact</a>
             </nav>
@@ -184,26 +243,38 @@
             </div>
         </section>
 
-        <section class="rep-history">
+        <section class="rep-media">
             <div class="container">
-                <h2 class="section-title">経歴 / 沿革</h2>
-                <div class="history-timeline">
-                    <div class="history-item">
-                        <div class="history-year">2010年</div>
-                        <div class="history-detail">大学卒業後、国内大手企業にて新規事業の立ち上げおよびグローバル展開プロジェクトに従事。</div>
-                    </div>
-                    <div class="history-item">
-                        <div class="history-year">2015年</div>
-                        <div class="history-detail">東南アジアを中心に、海外インターンシップ事業や越境学習プログラムの開発に着手。</div>
-                    </div>
-                    <div class="history-item">
-                        <div class="history-year">2020年</div>
-                        <div class="history-detail">「自ら考え、自ら動く力」を育む教育プログラムの提供を目指し、株式会社AWAY（Planedot）を設立。代表取締役に就任。</div>
-                    </div>
-                    <div class="history-item">
-                        <div class="history-year">2024年</div>
-                        <div class="history-detail">累計数百名以上の学生・社会人の海外越境学習をサポート。イノベーション人材の育成に注力。</div>
-                    </div>
+                <h2 class="section-title">掲載メディア実績</h2>
+                <div class="media-list">
+                    <a href="https://goodpatch.com/blog/2025-10-kyushuuniv04" class="media-item" target="_blank" rel="noopener noreferrer">
+                        <div class="media-meta">
+                            <span class="media-date-category">2025.10.02 / Webメディア「Goodpatch Blog」</span>
+                            <h3 class="media-title">AIの普及の鍵は「体験のデザイン」にある──九州大学とのコラボ授業の裏側（第4回）</h3>
+                        </div>
+                        <span class="media-link-arrow">→</span>
+                    </a>
+                    <a href="#" class="media-item">
+                        <div class="media-meta">
+                            <span class="media-date-category">2024.11.10 / Webメディア「Global Business Online」</span>
+                            <h3 class="media-title">インタビュー：これからの時代に必要な『越境学習』とリーダーシップ</h3>
+                        </div>
+                        <span class="media-link-arrow">→</span>
+                    </a>
+                    <a href="#" class="media-item">
+                        <div class="media-meta">
+                            <span class="media-date-category">2023.08.05 / 新聞・プレス</span>
+                            <h3 class="media-title">日本経済新聞（朝刊）にて、弊社の海外インターンシップ事業が紹介されました</h3>
+                        </div>
+                        <span class="media-link-arrow">→</span>
+                    </a>
+                    <a href="#" class="media-item">
+                        <div class="media-meta">
+                            <span class="media-date-category">2023.03.15 / 雑誌「Startup Leaders 3月号」</span>
+                            <h3 class="media-title">特集：『自らの道を切り拓く若者を育てる—株式会社AWAYの挑戦』</h3>
+                        </div>
+                        <span class="media-link-arrow">→</span>
+                    </a>
                 </div>
             </div>
         </section>

@@ -12,6 +12,132 @@
         rel="stylesheet">
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Page Custom Styles */
+        .sp-hero {
+            padding: 120px 0 80px;
+            background-color: #fff;
+        }
+
+        .sp-hero-title {
+            font-size: 56px;
+            font-weight: 900;
+            line-height: 1.15;
+            color: #000;
+            margin-bottom: 24px;
+        }
+
+        .sp-hero-title span {
+            color: #ff4d4d;
+        }
+
+        .sp-hero-subtitle {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: #777;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        .sp-section {
+            padding: 100px 0;
+        }
+
+        .sp-section.bg-light {
+            background-color: #f8f9fa;
+        }
+
+        .sp-section.bg-dark {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .sp-section-title {
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 50px;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .sp-section-title span {
+            color: #ff4d4d;
+        }
+
+        .sp-section-subtitle {
+            font-size: 12px;
+            font-weight: 700;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .sp-grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .sp-grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .sp-card {
+            background-color: #fff;
+            padding: 40px 30px;
+            border-radius: 0;
+            border: 1px solid #eee;
+        }
+
+        .sp-card-num {
+            font-size: 12px;
+            font-weight: 800;
+            color: #ff4d4d;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .sp-card-title {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: #000;
+            line-height: 1.4;
+        }
+
+        .sp-card-desc {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .sp-card-dark {
+            background-color: #000;
+            border: none;
+            color: #fff;
+        }
+
+        .sp-card-dark .sp-card-title {
+            color: #fff;
+        }
+
+        .sp-card-dark .sp-card-desc {
+            color: #ccc;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 991px) {
+            .sp-grid-3, .sp-grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -39,34 +165,241 @@
                 Back to Home
             </a>
 
-            <h1 style="font-size: 48px; margin-bottom: 40px; line-height: 1.2;">学生向け海外インターン</h1>
+            <h1 style="font-size: 80px; font-weight: 900; line-height: 1.1; letter-spacing: -0.02em; color: #000; margin-bottom: 50px; margin-top: 20px;">
+                次世代リーダー<br>育成プログラム<span style="color: #ff4d4d;">。</span>
+            </h1>
 
-            <div style="margin-bottom: 60px; border-radius: 30px; overflow: hidden; height: 500px;">
-                <img src="images/学生向け.png" alt="学生向け海外インターン" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="max-width: 800px; line-height: 1.8; font-size: 16px; color: #333; margin-bottom: 80px;">
+                <p style="margin-bottom: 12px; font-size: 20px; font-weight: 800; color: #0f172a; font-family: 'Noto Sans JP', sans-serif;">
+                    指示待ちから、主体的に動く若手へ
+                </p>
+                <p style="font-size: 15px; color: #64748b; font-weight: 500;">
+                    答えのない海外で、ゼロから価値を生む10日間。
+                </p>
             </div>
-
-            <div style="max-width: 800px; line-height: 2; font-size: 16px; color: #333;">
-                <p style="margin-bottom: 30px; font-size: 20px; font-weight: 700;">
-                    「世界一新しい自分」に出会う、実践型海外インターンシップ。
+        </div>
+        
+        <!-- Mission Section -->
+        <section class="sp-section bg-light">
+            <div class="container">
+                <h2 class="sp-section-title" style="margin-bottom: 24px;">こんな課題を、<br><span>感じていませんか。</span></h2>
+                <p class="section-desc" style="max-width: 100%; font-size: 15px; margin-bottom: 20px; color: #555;">
+                    これは経営層だけの悩みではありません。現場の<strong>部長・課長クラス</strong>もまた、日々同じ課題を抱えています。
                 </p>
-                <p style="margin-bottom: 30px;">
-                    AWAYの学生向けプログラムは、単なる観光や語学留学ではありません。現地のビジネスの最前線に飛び込み、未知の環境で課題を解決するプロセスを通じて、一生モノの「原体験」を構築します。
+                <p style="color: #ff4d4d; font-weight: 700; font-size: 13px; margin-bottom: 40px; display: flex; align-items: center; gap: 8px;">
+                    <span style="display: inline-block; width: 16px; height: 1px; background-color: #ff4d4d;"></span>現場で繰り返し聞こえてくる声
                 </p>
-                <h2 style="font-size: 28px; margin: 60px 0 30px; font-family: var(--font-heading);">プログラムの特徴</h2>
-                <ul style="list-style: disc; padding-left: 20px; margin-bottom: 40px;">
-                    <li style="margin-bottom: 20px;"><strong>実地でのビジネス体験</strong>：現地の企業やプロジェクトに参画し、リアルな課題に挑戦します。</li>
-                    <li style="margin-bottom: 20px;"><strong>メンターによるサポート</strong>：豊富な経験を持つプロフェッショナルが、一人ひとりの成長を伴走。</li>
-                    <li style="margin-bottom: 20px;"><strong>グローバルなネットワーク</strong>：世界各地から集まる仲間や、現地リーダーとの繋がり。</li>
-                </ul>
-
-                <p style="margin-bottom: 40px;">
-                    詳細な日程や募集要項については、順次公式LINEやニュースでお知らせいたします。
-                </p>
-
-                <a href="contact.html" class="btn btn-black" style="padding: 20px 40px; font-size: 18px;">
-                    プログラムに申し込む
-                </a>
+                <div class="sp-grid-3">
+                    <div class="sp-card" style="display: flex; align-items: center; gap: 20px; padding: 30px 24px; background-color: #fff;">
+                        <span style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 2px solid #ff4d4d; border-radius: 50%; color: #ff4d4d; font-size: 18px; font-weight: 800; flex-shrink: 0; font-family: 'Inter', sans-serif;">!</span>
+                        <p style="font-size: 14px; font-weight: 700; color: #333; line-height: 1.5; margin: 0;">若手にもっと自分で考え、自分から動いてほしい</p>
+                    </div>
+                    <div class="sp-card" style="display: flex; align-items: center; gap: 20px; padding: 30px 24px; background-color: #fff;">
+                        <span style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 2px solid #ff4d4d; border-radius: 50%; color: #ff4d4d; font-size: 18px; font-weight: 800; flex-shrink: 0; font-family: 'Inter', sans-serif;">!</span>
+                        <p style="font-size: 14px; font-weight: 700; color: #333; line-height: 1.5; margin: 0;">指示がないと止まる。任せたいのに、任せきれない</p>
+                    </div>
+                    <div class="sp-card" style="display: flex; align-items: center; gap: 20px; padding: 30px 24px; background-color: #fff;">
+                        <span style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 2px solid #ff4d4d; border-radius: 50%; color: #ff4d4d; font-size: 18px; font-weight: 800; flex-shrink: 0; font-family: 'Inter', sans-serif;">!</span>
+                        <p style="font-size: 14px; font-weight: 700; color: #333; line-height: 1.5; margin: 0;">研修はやっている。でも、現場での”自走”につながっている実感がない</p>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- Anti-Safety Section (Dark) -->
+        <section class="sp-section bg-dark" style="background-color: #000; padding: 100px 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 80px; align-items: flex-start;">
+                    <!-- 左カラム -->
+                    <div style="display: flex; flex-direction: column; gap: 40px;">
+                        <h2 style="font-size: 64px; font-weight: 900; line-height: 1.15; color: #fff; margin: 0; letter-spacing: -0.02em; font-family: 'Noto Sans JP', sans-serif;">
+                            自ら動くスイッチは、<br><span style="color: #ff4d4d;">安全な場所</span>では入らない。
+                        </h2>
+                        <div style="display: flex; flex-direction: column; gap: 30px;">
+                            <p style="font-size: 15px; color: #94a3b8; line-height: 1.8; margin: 0; font-weight: 500;">
+                                答えのある課題。整えられた環境。見知った社内の人間関係。国内で、事業の合間にこなすありきたりな機会。――その中では、「正解を探す思考」から抜け出せるません。
+                            </p>
+                            <p style="font-size: 20px; font-weight: 800; line-height: 1.6; margin: 0; color: #fff; font-family: 'Noto Sans JP', sans-serif;">
+                                自ら動く力は教わって身につくものではなく、<br><span style="color: #ff4d4d;">自ら動かざるを得ない状況</span>で初めて立ち上がる。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 右カラム -->
+                    <div style="margin-top: 20px;">
+                        <p style="color: #94a3b8; font-weight: 700; font-size: 13px; margin-bottom: 24px; display: flex; align-items: center; gap: 8px; margin-top: 0; letter-spacing: 0.05em;">
+                            <span style="display: inline-block; width: 12px; height: 1px; background-color: #94a3b8;"></span>「安全」が、自ら動く力を眠らせる
+                        </p>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <div style="border: 1px solid #1e293b; padding: 20px 24px; display: flex; align-items: center; gap: 20px; background: transparent; border-radius: 0;">
+                                <span style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700; color: #475569;">01</span>
+                                <span style="font-size: 14px; font-weight: 700; color: #fff; font-family: 'Noto Sans JP', sans-serif;">答えのある課題</span>
+                            </div>
+                            <div style="border: 1px solid #1e293b; padding: 20px 24px; display: flex; align-items: center; gap: 20px; background: transparent; border-radius: 0;">
+                                <span style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700; color: #475569;">02</span>
+                                <span style="font-size: 14px; font-weight: 700; color: #fff; font-family: 'Noto Sans JP', sans-serif;">整えられた環境</span>
+                            </div>
+                            <div style="border: 1px solid #1e293b; padding: 20px 24px; display: flex; align-items: center; gap: 20px; background: transparent; border-radius: 0;">
+                                <span style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700; color: #475569;">03</span>
+                                <span style="font-size: 14px; font-weight: 700; color: #fff; font-family: 'Noto Sans JP', sans-serif;">見知った社内の人間関係</span>
+                            </div>
+                            <div style="border: 1px solid #1e293b; padding: 20px 24px; display: flex; align-items: center; gap: 20px; background: transparent; border-radius: 0;">
+                                <span style="font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700; color: #475569;">04</span>
+                                <span style="font-size: 14px; font-weight: 700; color: #fff; font-family: 'Noto Sans JP', sans-serif;">事業の合間という中途半端さ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mindset Section (Replaced with Away Trip Details) -->
+        <section class="sp-section" style="padding: 100px 0 80px;">
+            <div class="container">
+                <span class="sp-section-subtitle" style="font-size: 12px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.15em; display: block; margin-bottom: 20px;">THE ANSWER / AWAY TRIPとは</span>
+                <h2 class="sp-section-title" style="font-size: 64px; font-weight: 900; margin-bottom: 32px; line-height: 1.15; letter-spacing: -0.02em; color: #000;">答えのない海外で、<br>ゼロから価値を生む10日間<span style="color: #ff4d4d;">。</span></h2>
+                <div style="max-width: 660px; margin-bottom: 50px;">
+                    <p style="font-size: 15px; color: #555; line-height: 1.8; margin-bottom: 16px; font-weight: 500;">
+                        急成長するASEAN（ベトナム・マレーシア）で、現地の人に本当に求められる商品・サービスをゼロから生み出す。
+                    </p>
+                    <p style="font-size: 16px; font-weight: 800; color: #000; margin-bottom: 0; line-height: 1.6;">
+                        観光でも見学型でもない、完全アウェイな実践プログラムです。
+                    </p>
+                </div>
+                
+                <p style="color: #ff4d4d; font-weight: 700; font-size: 13px; margin-bottom: 30px; display: flex; align-items: center; gap: 8px; letter-spacing: 0.05em;">
+                    <span style="display: inline-block; width: 12px; height: 1px; background-color: #ff4d4d;"></span>10日間で、実際にやること
+                </p>
+
+                <div class="sp-grid-3" style="gap: 24px;">
+                    <div class="sp-card" style="background-color: #f8f9fa; border: none; padding: 48px 36px; border-radius: 0;">
+                        <span style="font-size: 40px; font-weight: 900; color: #ff4d4d; margin-bottom: 24px; display: block; font-family: 'Inter', sans-serif; line-height: 1;">01</span>
+                        <h3 class="sp-card-title" style="font-size: 20px; font-weight: 800; margin-bottom: 16px; color: #000; letter-spacing: -0.01em;">生の声を、聞く</h3>
+                        <p class="sp-card-desc" style="font-size: 14px; line-height: 1.7; color: #555; margin: 0;">現地の人へ直接インタビューし、観察する。何に困り、何を求めているのかを掘り起こす。</p>
+                    </div>
+                    <div class="sp-card" style="background-color: #f8f9fa; border: none; padding: 48px 36px; border-radius: 0;">
+                        <span style="font-size: 40px; font-weight: 900; color: #ff4d4d; margin-bottom: 24px; display: block; font-family: 'Inter', sans-serif; line-height: 1;">02</span>
+                        <h3 class="sp-card-title" style="font-size: 20px; font-weight: 800; margin-bottom: 16px; color: #000; letter-spacing: -0.01em;">インサイトに変える</h3>
+                        <p class="sp-card-desc" style="font-size: 14px; line-height: 1.7; color: #555; margin: 0;">集めた声を、表面的な要望ではなく「本当のニーズ」へ読み解き、チームで仮説を立てる。</p>
+                    </div>
+                    <div class="sp-card" style="background-color: #000; border: none; padding: 48px 36px; border-radius: 0;">
+                        <span style="font-size: 40px; font-weight: 900; color: #ff4d4d; margin-bottom: 24px; display: block; font-family: 'Inter', sans-serif; line-height: 1;">03</span>
+                        <h3 class="sp-card-title" style="font-size: 20px; font-weight: 800; margin-bottom: 16px; color: #fff; letter-spacing: -0.01em;">形にして、ぶつける</h3>
+                        <p class="sp-card-desc" style="font-size: 14px; line-height: 1.7; color: #ccc; margin: 0;">仮説をもとに商品・サービスをつくり、現地で提案・販売。「買いたい」と言ってもらえるか検証する。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outcomes Section -->
+        <section class="sp-section bg-light">
+            <div class="container">
+                <span class="sp-section-subtitle" style="font-size: 12px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.15em; display: block; margin-bottom: 20px;">OUTCOMES</span>
+                <h2 class="sp-section-title" style="font-size: 42px; margin-bottom: 24px; line-height: 1.2;">この研修で、<br>参加者はどう変わるか<span style="color: #ff4d4d;">。</span></h2>
+                <p style="font-size: 15px; color: #555; line-height: 1.8; margin-bottom: 40px; font-weight: 500; max-width: 700px;">
+                    安全な殻を破り、カオスなアウェイ環境に身を置く 10 日間。厳しいフィードバックと実践を繰り返す中で、これからの時代を生き抜く 3 つの核心的な力が鍛え上げられます。
+                </p>
+
+                <div class="sp-grid-3">
+                    <div class="sp-card" style="background-color: #fff; padding: 40px 30px; border-radius: 0; border: none; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                        <span style="font-size: 13px; font-weight: 800; color: #ff4d4d; margin-bottom: 12px; display: block; font-family: 'Inter', sans-serif; letter-spacing: 1px;">EFFECT 01</span>
+                        <h3 class="sp-card-title" style="font-size: 20px; font-weight: 800; margin-bottom: 18px; line-height: 1.4; color: #000;">自ら考え動き、<br>オーナーシップを持つ</h3>
+                        <p class="sp-card-desc" style="font-size: 13px; line-height: 1.7; color: #555; margin: 0;">
+                            誰からの指示も正解も存在しない環境下で、「自分がやるしかない」当事者意識が極限まで高まります。主体性のスイッチが入り、周囲を巻き込みながら自らの意志でプロジェクトを牽引しきる力を獲得します。
+                        </p>
+                    </div>
+                    <div class="sp-card" style="background-color: #fff; padding: 40px 30px; border-radius: 0; border: none; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                        <span style="font-size: 13px; font-weight: 800; color: #ff4d4d; margin-bottom: 12px; display: block; font-family: 'Inter', sans-serif; letter-spacing: 1px;">EFFECT 02</span>
+                        <h3 class="sp-card-title" style="font-size: 20px; font-weight: 800; margin-bottom: 18px; line-height: 1.4; color: #000;">他者と互いの強みを<br>活かして、協業する力</h3>
+                        <p class="sp-card-desc" style="font-size: 13px; line-height: 1.7; color: #555; margin: 0;">
+                            言葉や文化の異なる現地の人々、そして多様な背景を持つチームメンバーと向き合います。同質性に甘んじることなく、異なる価値観や個々の強みを引き出し合い、共通のゴールへ最短で向かうコラボレーション力を養います。
+                        </p>
+                    </div>
+                    <div class="sp-card sp-card-dark" style="background-color: #000; padding: 40px 30px; border-radius: 0; border: none;">
+                        <span style="font-size: 13px; font-weight: 800; color: #ff4d4d; margin-bottom: 12px; display: block; font-family: 'Inter', sans-serif; letter-spacing: 1px;">EFFECT 03</span>
+                        <h3 class="sp-card-title" style="font-size: 20px; font-weight: 800; margin-bottom: 18px; line-height: 1.4; color: #fff;">予想外の困難な状況下でも<br>やりきるタフさ</h3>
+                        <p class="sp-card-desc" style="font-size: 13px; line-height: 1.7; color: #ccc; margin: 0;">
+                            日本の当たり前が崩れ去り、想定外のトラブルが頻発するアウェイ the 現場。失敗や計画の崩壊を恐れず、その場その場で柔軟に適応し、粘り強くアイデアを軌道修正しながら最後まで成果にこだわり抜く精神的・行動的な強さを身につけます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Voice Section -->
+        <section class="sp-section">
+            <div class="container">
+                <span class="sp-section-subtitle" style="font-size: 12px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.15em; display: block; margin-bottom: 20px;">VOICE</span>
+                <h2 class="sp-section-title" style="font-size: 42px; margin-bottom: 50px;">参加者の声</h2>
+                <div class="sp-grid-2" style="gap: 30px;">
+                    <div class="sp-card" style="background-color: #f8f9fa; padding: 40px 30px; border-radius: 0; border: none;">
+                        <span class="sp-card-num" style="font-size: 12px; font-weight: 700; color: #888; display: block; margin-bottom: 12px;">STUDENT / 文系大学生（21歳）</span>
+                        <h3 class="sp-card-title" style="font-size: 20px; font-weight: 800; margin-bottom: 16px; color: #000;">「自分にもできる」という確固たる自信へ</h3>
+                        <p class="sp-card-desc" style="font-size: 14px; line-height: 1.7; color: #555; margin: 0;">「机の上の勉強とは違い、現場でのリアルな交渉やインタビューは予想以上に泥臭いものでした。何度も断られながらも、チームで仮説をぶつけ、最後は現地のショップに自分たちのアイデアを提案して販売することができました。結果として『自ら動けば未来は変わる』という絶対的な自信が得られました。」</p>
+                    </div>
+                    <div class="sp-card" style="background-color: #f8f9fa; padding: 40px 30px; border-radius: 0; border: none;">
+                        <span class="sp-card-num" style="font-size: 12px; font-weight: 700; color: #888; display: block; margin-bottom: 12px;">STUDENT / 理系大学生（20歳）</span>
+                        <h3 class="sp-card-title" style="font-size: 20px; font-weight: 800; margin-bottom: 16px; color: #000;">完璧主義を脱し、自走する自分へ</h3>
+                        <p class="sp-card-desc" style="font-size: 14px; line-height: 1.7; color: #555; margin: 0;">「計画を練りすぎて行動が遅れるタイプでした。現地では準備したことが初日に崩壊し、スピード重視で『まずやってみる』ことを余儀なくされました。その結果、失敗を恐れずプロジェクトを推進する真の行動力が身につきました。」</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section class="sp-section bg-light">
+            <div class="container">
+                <span class="sp-section-subtitle" style="font-size: 12px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.15em; display: block; margin-bottom: 20px;">SCHEDULE</span>
+                <h2 class="sp-section-title" style="font-size: 42px; margin-bottom: 50px;">プログラムの流れ</h2>
+                <table class="schedule-table" style="width: 100%; border-collapse: collapse;">
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td class="schedule-day" style="padding: 24px 0; font-weight: 800; color: #ff4d4d; width: 120px;">Day 1</td>
+                        <td class="schedule-title" style="padding: 24px 0; font-weight: 800; color: #000; width: 220px; font-size: 18px;">出国・オリエンテーション</td>
+                        <td class="schedule-desc" style="padding: 24px 0; color: #555; line-height: 1.6;">現地到着後、街の散策とオリエンテーション。アウェイ環境でのマインドセットを整えます。</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td class="schedule-day" style="padding: 24px 0; font-weight: 800; color: #ff4d4d;">Day 2-3</td>
+                        <td class="schedule-title" style="padding: 24px 0; font-weight: 800; color: #000; font-size: 18px;">フィールドリサーチ</td>
+                        <td class="schedule-desc" style="padding: 24px 0; color: #555; line-height: 1.6;">探索的な現地市場に飛び出し、現地の人々にインタビューを行ってリアルなニーズを発見します。</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td class="schedule-day" style="padding: 24px 0; font-weight: 800; color: #ff4d4d;">Day 4-6</td>
+                        <td class="schedule-title" style="padding: 24px 0; font-weight: 800; color: #000; font-size: 18px;">サービス設計・試作</td>
+                        <td class="schedule-desc" style="padding: 24px 0; color: #555; line-height: 1.6;">発見した課題に対し、解決するアイデアを議論。最速で形にしてプロトタイプを作成します。</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td class="schedule-day" style="padding: 24px 0; font-weight: 800; color: #ff4d4d;">Day 7-8</td>
+                        <td class="schedule-title" style="padding: 24px 0; font-weight: 800; color: #000; font-size: 18px;">現地検証・修正</td>
+                        <td class="schedule-desc" style="padding: 24px 0; color: #555; line-height: 1.6;">作成したプロトタイプを現地市場でテスト。辛辣なフィードバックを受けながらアイデアをブラッシュアップ。</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td class="schedule-day" style="padding: 24px 0; font-weight: 800; color: #ff4d4d;">Day 9</td>
+                        <td class="schedule-title" style="padding: 24px 0; font-weight: 800; color: #000; font-size: 18px;">最終ピッチ（プレゼン）</td>
+                        <td class="schedule-desc" style="padding: 24px 0; color: #555; line-height: 1.6;">現地のビジネスリーダーや投資家に対し、自分たちの成果物とビジネスモデルを英語でプレゼンします。</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td class="schedule-day" style="padding: 24px 0; font-weight: 800; color: #ff4d4d;">Day 10</td>
+                        <td class="schedule-title" style="padding: 24px 0; font-weight: 800; color: #000; font-size: 18px;">振り返り・帰国</td>
+                        <td class="schedule-desc" style="padding: 24px 0; color: #555; line-height: 1.6;">10日間の自己の行動、成長、学びを徹底的に振り返り、日本で何を起こすかを宣言して帰国します。</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+<!-- Contact Section (Dark) -->
+        <section class="sp-section bg-dark">
+            <div class="container">
+                <div class="btn-center" style="text-align: center;">
+                    <span class="sp-section-subtitle" style="font-size: 12px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.15em; display: block; margin-bottom: 20px;">CONTACT</span>
+                    <h2 class="sp-section-title" style="font-size: 42px; margin-bottom: 24px; color: #fff;">まずは、話し合いましょう。</h2>
+                    <p class="section-desc" style="margin: 0 auto 40px; color: #ccc; font-size: 15px; max-width: 600px; line-height: 1.7;">
+                        説明会へのご予約や、プログラムについてのご質問・ご相談など、お気軽にお問い合わせください。
+                    </p>
+                    <a href="contact.html" class="btn btn-black btn-large" style="background: #fff; color: #000; padding: 18px 36px; font-size: 16px; font-weight: 800; border-radius: 0; text-decoration: none; display: inline-block;">
+                        お問い合わせフォームへ <span style="margin-left: 8px;">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
         </div>
     </main>
 
