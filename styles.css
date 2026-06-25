@@ -538,6 +538,7 @@ h4 {
 
 .radio-group {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 10px 0;
 }
@@ -767,18 +768,86 @@ footer.theme-dark {
 
 
 /* Responsive */
+.menu-toggle {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .header-container {
         padding: 0 20px;
     }
 
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
+        padding: 0;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        transition: all 0.3s ease;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
     .nav {
-        display: none;
-        /* simple hide for now */
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: -10px 0 20px rgba(0,0,0,0.1);
+        padding: 100px 40px 40px;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .nav.active {
+        right: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .nav-list a {
+        font-size: 18px;
+        display: block;
+        width: 100%;
+    }
+
+    .nav .btn {
+        width: 100%;
+        text-align: center;
     }
 
     .hero-title {
-        font-size: 48px;
+        font-size: 38px;
     }
 
     .program-item {
@@ -793,8 +862,6 @@ footer.theme-dark {
         aspect-ratio: 16/9;
         margin-right: 0;
     }
-
-
 
     .news-grid {
         grid-template-columns: 1fr;

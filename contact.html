@@ -12,12 +12,33 @@
         rel="stylesheet">
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px !important;
+                margin-bottom: 16px !important;
+            }
+            main {
+                padding-top: 100px !important;
+                padding-bottom: 60px !important;
+            }
+            .radio-group {
+                flex-direction: column;
+                gap: 12px !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header class="header">
         <div class="container header-container">
             <a href="index.html" class="logo">AWAY</a>
+            <button class="menu-toggle" aria-label="メニューを開閉する">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="index.html#about">ABOUT</a></li>
@@ -103,6 +124,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js?v=1.0.2"></script>
 </body>
 
 </html>

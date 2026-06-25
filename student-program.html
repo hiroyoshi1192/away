@@ -137,6 +137,39 @@
                 grid-template-columns: 1fr;
             }
         }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 38px !important;
+                margin-bottom: 30px !important;
+            }
+            .sp-hero-title {
+                font-size: 36px !important;
+            }
+            .sp-section-title {
+                font-size: 30px !important;
+                margin-bottom: 30px !important;
+            }
+            .schedule-table, 
+            .schedule-table tbody, 
+            .schedule-table tr, 
+            .schedule-table td {
+                display: block;
+                width: 100% !important;
+            }
+            .schedule-table tr {
+                padding: 16px 0;
+            }
+            .schedule-table td {
+                padding: 4px 0 !important;
+            }
+            .schedule-table .schedule-day {
+                font-size: 14px;
+            }
+            .schedule-table .schedule-title {
+                font-size: 16px;
+                margin-bottom: 4px;
+            }
+        }
     </style>
 </head>
 
@@ -144,6 +177,11 @@
     <header class="header">
         <div class="container header-container">
             <a href="index.html" class="logo">AWAY</a>
+            <button class="menu-toggle" aria-label="メニューを開閉する">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="index.html#about">ABOUT</a></li>
@@ -419,6 +457,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js?v=1.0.2"></script>
 </body>
 
 </html>

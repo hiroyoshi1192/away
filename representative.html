@@ -188,6 +188,21 @@
                 gap: 20px;
             }
         }
+        @media (max-width: 768px) {
+            .history-item {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+            .rep-name {
+                font-size: 28px !important;
+            }
+            .rep-title {
+                font-size: 14px !important;
+            }
+            .section-title {
+                font-size: 28px !important;
+            }
+        }
     </style>
 </head>
 
@@ -195,6 +210,11 @@
     <header class="header">
         <div class="container header-container">
             <a href="index.html" class="logo">AWAY</a>
+            <button class="menu-toggle" aria-label="メニューを開閉する">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="index.html#about">ABOUT</a></li>
@@ -297,6 +317,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js?v=1.0.2"></script>
 </body>
 
 </html>
