@@ -131,6 +131,89 @@
             color: #ccc;
         }
 
+        /* Student Hero Section Styling */
+        .student-hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 80px 0 60px;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+
+        .student-hero-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            min-height: calc(100vh - 140px);
+            width: 100%;
+        }
+
+        .student-hero-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            margin-top: 20px;
+        }
+
+        .student-hero-back span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border: 1px solid #000;
+            border-radius: 50%;
+        }
+
+        .student-hero-content {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .student-hero-title {
+            font-size: 80px;
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            color: #000;
+            margin-bottom: 50px;
+        }
+
+        .student-hero-text {
+            max-width: 800px;
+            line-height: 1.8;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .student-hero-lead {
+            margin-bottom: 12px;
+            font-size: 24px;
+            font-weight: 800;
+            color: #0f172a;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .student-hero-sublead {
+            font-size: 18px;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        .student-mission {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .student-mission .container {
+            width: 100%;
+        }
+
         /* Responsive Styles */
         @media (max-width: 991px) {
             .sp-grid-3, .sp-grid-2 {
@@ -138,6 +221,27 @@
             }
         }
         @media (max-width: 768px) {
+            .student-hero {
+                min-height: auto;
+                padding: 100px 0 60px;
+            }
+            .student-hero-container {
+                min-height: auto;
+            }
+            .student-hero-title {
+                font-size: 38px !important;
+                margin-bottom: 30px !important;
+            }
+            .student-hero-lead {
+                font-size: 18px !important;
+            }
+            .student-hero-sublead {
+                font-size: 14px !important;
+            }
+            .student-mission {
+                min-height: auto;
+                padding: 80px 0;
+            }
             h1 {
                 font-size: 38px !important;
                 margin-bottom: 30px !important;
@@ -194,31 +298,34 @@
         </div>
     </header>
 
-    <main style="padding-top: 150px; padding-bottom: 100px;">
-        <div class="container">
-            <a href="index.html"
-                style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600; margin-bottom: 40px;">
-                <span
-                    style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid #000; border-radius: 50%;">←</span>
-                Back to Home
-            </a>
+    <main>
+        <!-- Hero Section -->
+        <section class="student-hero">
+            <div class="container student-hero-container">
+                <a href="index.html" class="student-hero-back">
+                    <span>←</span>
+                    Back to Home
+                </a>
 
-            <h1 style="font-size: 80px; font-weight: 900; line-height: 1.1; letter-spacing: -0.02em; color: #000; margin-bottom: 50px; margin-top: 20px;">
-                次世代リーダー<br>育成プログラム<span style="color: #ff4d4d;">。</span>
-            </h1>
+                <div class="student-hero-content">
+                    <h1 class="student-hero-title">
+                        次世代リーダー<br>育成プログラム<span style="color: #ff4d4d;">。</span>
+                    </h1>
 
-            <div style="max-width: 800px; line-height: 1.8; font-size: 16px; color: #333; margin-bottom: 80px;">
-                <p style="margin-bottom: 12px; font-size: 20px; font-weight: 800; color: #0f172a; font-family: 'Noto Sans JP', sans-serif;">
-                    指示待ちから、主体的に動く若手へ
-                </p>
-                <p style="font-size: 15px; color: #64748b; font-weight: 500;">
-                    答えのない海外で、ゼロから価値を生む10日間。
-                </p>
+                    <div class="student-hero-text">
+                        <p class="student-hero-lead">
+                            指示待ちから、主体的に動く若手へ
+                        </p>
+                        <p class="student-hero-sublead">
+                            答えのない海外で、ゼロから価値を生む10日間。
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
         
         <!-- Mission Section -->
-        <section class="sp-section bg-light">
+        <section class="sp-section bg-light student-mission">
             <div class="container">
                 <h2 class="sp-section-title" style="margin-bottom: 24px;">こんな課題を、<br><span>感じていませんか。</span></h2>
                 <p class="section-desc" style="max-width: 100%; font-size: 15px; margin-bottom: 20px; color: #555;">
